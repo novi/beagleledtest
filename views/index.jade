@@ -1,0 +1,11 @@
+h1= title
+ul
+  li LED1: #{led1 ? 'ON' : 'OFF' }
+
+form(action='/', method='post')
+  p
+    | LED1:
+    input(type='checkbox', name='led1')
+  p
+    input(type='submit')
+
